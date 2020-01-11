@@ -1,17 +1,43 @@
 /* animations usa esse keyframe*/
-@keyframes animacao{
-  from {background-color: red;}
-  to {background-color: yellow;}
 
+@keyframes animacao {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
 }
 
 /* o porcento é de carregamento da página */
+
 @keyframes animacao2 {
   0% {}
-  30% {width: 100px;} 
-  60% {background-color: red;}
-  80% {left: 100px; background-color: blue;}
-  100% {height: 100px;}
+  30% {
+    width: 100px;
+  }
+  60% {
+    background-color: red;
+  }
+  80% {
+    left: 100px;
+    background-color: blue;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+/* adicionou o 0 no from para não pular e dar efeito de movimento */
+
+@keyframes animacao3 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+    background-color: green;
+  }
 }
 
 .animationDiv {
@@ -29,4 +55,17 @@
   animation-name: animacao2;
   animation-duration: 6s;
   position: relative;
+}
+
+/* animation delay e animação */
+
+.animationDiv3 {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  animation-name: animacao3;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  position: relative;
+  animation-iteration-count: 3;/* quantidade de vezes isso ira acontencer */
 }
