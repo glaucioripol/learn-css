@@ -2,7 +2,16 @@
 @keyframes animacao{
   from {background-color: red;}
   to {background-color: yellow;}
-  
+
+}
+
+/* o porcento é de carregamento da página */
+@keyframes animacao2 {
+  0% {}
+  30% {width: 100px;} 
+  60% {background-color: red;}
+  80% {left: 100px; background-color: blue;}
+  100% {height: 100px;}
 }
 
 .animationDiv {
@@ -11,4 +20,13 @@
   background-color: red;
   animation-name: animacao;
   animation-duration: 5s;
+}
+
+.animationDiv2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  animation-name: animacao2;
+  animation-duration: 6s;
+  position: relative;
 }
