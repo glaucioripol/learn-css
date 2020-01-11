@@ -1,0 +1,47 @@
+@keyframes animacao {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+    background-color: green;
+  }
+}
+
+.box {
+  text-align: center;
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  animation-name: animacao;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+/* definindo variações na animação */
+
+#animationDiv1 {
+  /*comportamento padrão*/
+  animation-timing-function: linear;
+}
+
+#animationDiv2 {
+  /*começa devagar, meio rapido e termina devagar*/
+  animation-timing-function: ease;
+}
+
+#animationDiv3 {
+  /* começa lento e fica padrão depois */
+  animation-timing-function: ease-in;
+}
+
+#animationDiv4 {
+  /* fim lento e resto padrão */
+  animation-timing-function: ease-out;
+}
+
+#animationDiv5 {
+  /* começo e fim lento */
+  animation-timing-function: ease-in-out;
+}
