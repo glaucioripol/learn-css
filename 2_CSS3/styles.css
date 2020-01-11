@@ -1,0 +1,14 @@
+/* animations usa esse keyframe*/
+@keyframes animacao{
+  from {background-color: red;}
+  to {background-color: yellow;}
+  
+}
+
+.animationDiv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animacao;
+  animation-duration: 5s;
+}
