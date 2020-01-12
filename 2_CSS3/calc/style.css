@@ -1,0 +1,31 @@
+.calc {
+  height: 250px;
+  width: 500px;
+  position: relative;
+  margin: 20px;
+  background-color: #DDD;
+  border: 1px solid red;
+}
+
+.calc__innerDiv {
+  height: 50px;
+  width: 10px;
+  position: relative;
+  background-color: red;
+}
+
+.calc1 {
+  width: calc(50% + 50px);
+}
+
+.calc2 {
+  width: calc(50% - 50px);
+}
+
+.calc3 {
+  width: calc(50% * 2);
+}
+
+.calc4 {
+  width: calc(50% / 2);
+}
