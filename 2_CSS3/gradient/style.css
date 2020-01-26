@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gradientBox {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  margin: 20px;
+}
+
+.gradient1 {
+background-image: linear-gradient(purple, blue);
+}
+.gradient2 {
+  /* assim o gradiente começa da direita */
+background-image: linear-gradient(to right, purple, blue);
+}
+.gradient3 {
+background-image: linear-gradient(to left, red, yellow);
+}
+.gradient4 {
+  background-image: linear-gradient(to top, red, yellow);
+}
+.gradient5 {
+  background-image: linear-gradient(to top right, purple, blue);
+}
+.gradient6 {
+  /* pode colocar n cores */
+  background-image: linear-gradient(red, green, blue);
+
+}
